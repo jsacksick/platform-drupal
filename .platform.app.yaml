@@ -37,6 +37,8 @@ mounts:
 hooks:
     # We run deploy hook after your application has been deployed and started.
     deploy: |
+      # Drupal 8 currently fails to create config directories
+      # automatically during install.
       mkdir -p config/active config/staging
       cd public
       drush -y updatedb
