@@ -4,6 +4,11 @@
 # The name of this app. Must be unique within a project.
 name: php
 
+# The build-time dependencies of the app.
+dependencies:
+    php:
+        "drush/drush": "7.0.0-alpha5"
+
 # The toolstack used to build the application.
 toolstack: "php:drupal"
 
